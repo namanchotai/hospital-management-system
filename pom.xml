@@ -11,7 +11,8 @@
 	<groupId>com.naman.hms</groupId>
 	<artifactId>hospital-management-system</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>hospital-management-system</name>
+    <packaging>pom</packaging>
+    <name>hospital-management-system</name>
 	<description>Enterprise Hospital Management REST API with layered architecture and business rule enforcement</description>
 	<url/>
 	<licenses>
@@ -20,7 +21,10 @@
 	<developers>
 		<developer/>
 	</developers>
-	<scm>
+    <modules>
+        <module>README.md</module>
+    </modules>
+    <scm>
 		<connection/>
 		<developerConnection/>
 		<tag/>
