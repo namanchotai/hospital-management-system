@@ -1,0 +1,29 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: hospital-management-system
+  jackson:
+    mapper:
+      accept-case-insensitive-enums: true
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/hms_db
+    username: postgres
+    password: YOUR_PASSWORD
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    open-in-view: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+
+logging:
+  level:
+    root: WARN
